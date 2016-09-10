@@ -67,12 +67,12 @@ enable_hook = True
 sleep_duration = 0.5
 quiet = False
 
-[passport 0]
+[passport "github.com"]
 email = email_0@example.com
 name = name_0
 service = github.com
 
-[passport 1]
+[passport "gitlab.com"]
 email = email_1@example.com
 name = name_1
 service = gitlab.com

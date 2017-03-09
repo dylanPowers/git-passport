@@ -69,6 +69,10 @@ if __name__ == "__main__":
                 )
             sys.exit(0)
 
+        if args.pre_commit_hook:
+            print("You have not set your git passport. Please run git passport")
+            sys.exit(2)
+
         if local_url:
             candidates = case.url_exists(config, local_url)
         else:

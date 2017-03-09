@@ -52,5 +52,11 @@ def release():
         help="print all passports in ~/.gitpassport"
     )
 
+    arg_group.add_argument(
+        "--pre-commit-hook",
+        action="store_true",
+        help="to be used as a pre-commit hook"
+    )
+
     args = arg_parser.parse_args()
     return args

@@ -226,7 +226,7 @@ def release(filename):
         pattern_section = r"^passport\s\"(.*)\"$"
         for passport in config.items():
             if re.match(pattern_section, passport[0]):
-                passport[1]["service"] = re.match(
+                passport[1]["passport_name"] = re.match(
                     pattern_section,
                     passport[0]
                 ).group(1)

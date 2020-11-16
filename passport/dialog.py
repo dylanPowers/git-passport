@@ -68,15 +68,15 @@ def print_choice(choice):
 
             print(util.dedented(msg, "lstrip"))
 
-        if value.get("service"):
+        if value.get("passport_name"):
             msg = """
                 ~Passport: ({})
-                    . Service: {}
-                    . User:    {}
-                    . E-Mail:  {}
+                    . Name:   {}
+                    . User:   {}
+                    . E-Mail: {}
             """.format(
                 key,
-                value["service"],
+                value["passport_name"],
                 value["name"],
                 value["email"]
             )
